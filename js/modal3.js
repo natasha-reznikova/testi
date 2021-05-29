@@ -33,7 +33,7 @@
 //     price: 2153,
 //     tags: ['premium', 'promoted', 'top'],
 //   };
-  
+
 //   // Change code below this line
 //   const aptRating = apartment.rating;
 //   const aptDescr = apartment.descr;
@@ -159,8 +159,8 @@
 //   // Change code below this line
 //   [emailInputName]: "henry.carter@aptmail.com",
 //   [passwordInputName]: "jqueryismyjam",
-  
-  
+
+
 //   // Change code above this line
 // };
 
@@ -252,7 +252,7 @@
 //   let propCount = 0;
 
 //      propCount = Object.keys(object).length;
-    
+
 
 //   return propCount;
 //   // Change code above this line
@@ -416,7 +416,7 @@
 // }
 
 //     // Change code above this line
-  
+
 
 
 // console.log(getAllPropValues("quantity"));
@@ -445,7 +445,7 @@
 //   totalCoast = product.price * product.quantity;
 // }
 
-  
+
 // }return totalCoast;
 //   // Пиши код выше этой строки
 // }
@@ -558,12 +558,12 @@
 // // Change code below this line
 // // Change code below this line
 // function calculateMeanTemperature(forecast) {
- 
+
 //  const {today: {low: todayLow, high: todayHigh},
 //         tomorrow: {low: tomorrowLow, high: tomorrowHigh}} = forecast;
 
 //   // Change code above this line
-        
+
 //  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
 
 //          }
@@ -663,21 +663,173 @@
 // addOverNum(20, 74, 11, 62, 46, 12, 36);
 
 
-// // Задание 33. Задача. Массив совпадений
+// // // Задание 33. Задача. Массив совпадений
 
-// Change code below this line
-function findMatches(...args) {
-  const matches = [];
- for (let i = 1; i < args.length; i += 1) {
-   if (args[0].includes(args[i])) {
-     matches.push(args[i]);
- }
- }
-return matches;
+// // Change code below this line
+// function findMatches(...args) {
+//   const matches = [];
+//  for (let i = 1; i < args.length; i += 1) {
+//    if (args[0].includes(args[i])) {
+//      matches.push(args[i]);
+//  }
+//  }
+// return matches;
 
-console.log(matches)
-} 
-console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
-console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
-console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
-console.log(findMatches([63, 11, 8, 29], 4, 7, 16))
+// console.log(matches)
+// } 
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+// console.log(findMatches([63, 11, 8, 29], 4, 7, 16))
+
+
+//  // Задание 34. Методы объекта
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ['The last kingdom', 'The guardian of dreams'],
+//   getBooks() {
+//     return 'Returning all books';
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+
+// removeBook(bookName) {
+//    return `Deleting book ${bookName}`;  
+// },
+
+// updateBook(oldName, newName) {
+// return `Updating book ${oldName} to ${newName}`;
+// }
+//   // Change code above this line
+// };
+
+
+// // Задание 35. Доступ к свойствам объекта в его методах
+
+// const bookShelf = {
+//   books: ['The last kingdom', 'Haze', 'The guardian of dreams'],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+// 	const index = this.books.indexOf(oldName);
+//     this.books.splice(index, 1, newName);
+
+
+//     // Change code above this line
+//   },
+// };
+
+// bookShelf.updateBook("Haze", "Dungeon chronicles");
+// bookShelf.updateBook("The last kingdom", "Dune");
+
+
+// // Задание 36. Задача. Лавка зелий «У старой жабы»
+// const atTheOldToad = {
+//   // Change code below this line
+// potions: [],
+//   // Change code above this line
+// };
+
+//  // Задание 37. Задача. Лавка зелий «У старой жабы»
+// const atTheOldToad = {
+//   // Change code below this line
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+// getPotions() {
+// return this.potions}
+//   // Change code above this line
+// };
+// console.log(atTheOldToad.potions);
+// console.log(atTheOldToad.getPotions() )
+
+
+// //  // Задание 38. Задача. Добавляем новое зелье
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   addPotion(potionName) {
+//     // Change code below this line
+// this.potions.push(potionName);
+// return this.potions;
+//     // Change code above this line
+//   },
+// };
+
+// console.log(atTheOldToad);
+// console.log(atTheOldToad.addPotion('Invisibility'));
+// console.log(atTheOldToad.addPotion('Power potion'))
+
+
+// //  // Задание 39. Задача. Удаляем зелье
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   remiovePotion(potionName) {
+//     // Change code below this line
+//     const index = this.potions.indexOf(potionName);
+//     this.potions.splice(index, 1);
+//     // Change code above this line
+//   },
+// };
+
+// console.log(atTheOldToad(removePotion("Dragon breath")));
+// // console.log(atTheOldToad.potions)
+// // console.log(removePotion("Dragon breath"));
+// // console.log(removePotion("Speed potion"))
+
+// что мне нужно указать, чтоб получить в консоли результат
+
+// //  Задание 40. Задача. Обновляем зелье
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+//  const index = this.potions.indexOf(oldName);
+//  this.potions.slice(index, 1, newName);
+//     // Change code above this line
+//   },
+// };
+// // atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
+// // atTheOldToad.updatePotionName("Stone skin", "Invisibility");   как отобразить вот это в консоли???
+
+
+//  Задание 41. Задача. Расширяем инвентарь
+const atTheOldToad = {
+  potions: [
+    { name: 'Speed potion', price: 460 },
+    { name: 'Dragon breath', price: 780 },
+    { name: 'Stone skin', price: 520 },
+  ],
+  // Change code below this line
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(potionName) {
+for (let i = 0; i < this.potions.length; i += 1)
+    if (this.potions[i] === potionName) {
+      return `Potion ${potionName} is already equipped!`;
+    }
+
+    this.potions.push(potionName);
+  },
+  removePotion(potionName) {
+  const { potions } = this;
+  for (let i = 0; i < potions.length; i += 1) {
+      if (potions[i].name === potionName) {
+        potions.splice(i, 1);
+        return potions;
+      }
+  } return `Potion ${potionName} is not in inventory!`;
+  },
+
+
+  updatePotionName(oldName, newName) {
+       const { potions } = this;
+    for (let i = 0; i < potions.length; i += 1) {
+      if (potions[i].name === oldName) {
+        potions[i].name = newName;
+        return potions;
+      }
+    }
+    return `Potion ${oldName} is not in inventory!`;
+  },
+  // Change code above this line
+};

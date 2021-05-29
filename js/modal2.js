@@ -505,11 +505,71 @@ function includes(array, value) {
 
   
 
-  // Change code above this line
+//   // Change code above this line
 
-includes([1, 2, 3, 4, 5], 3);
-console.log(includes([1, 2, 3, 4, 5], 17));
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
-console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
-console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
+// includes([1, 2, 3, 4, 5], 3);
+// console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
+
+
+
+// Приветсти массив к одному уровню
+
+// const arr = ['2232', ['Hello', 'world'], '777', ['new array', ['some array', ['next level']]]]
+От GoIT Academy 8 всем:  04:56 PM
+// Task 4
+// У нас есть объект, нужно создать функцию, которая будет его перебирать
+// и если значение какого-то поля это массив (сделать проверку на массив),
+// в таком случае добавляем к объекту obj1 поля в формате 'I like элемент массива', после вызова функции мы должны
+// получить объект вот в таком виде
+// {
+//     'I like c++': "c++",
+//     'I like java': "java",
+//     'I like js': "js",
+//     'i like my work': true,
+//     'my name': "John",
+//     'programming languages': ['js', 'java', 'c++']
+// }
+
+const obj1 = {
+  "my name": "John",
+  "i like my work": true,
+  "programming languages": ["js", "java", "c++"],
+};
+
+
+// Task 4
+// У нас есть объект, нужно создать функцию, которая будет его перебирать
+// и если значение какого-то поля это массив (сделать проверку на массив),
+// в таком случае добавляем к объекту obj1 поля в формате 'I like элемент массива', после вызова функции мы должны
+// получить объект вот в таком виде
+// {
+//     'I like c++': "c++",
+//     'I like java': "java",
+//     'I like js': "js",
+//     'i like my work': true,
+//     'my name': "John",
+//     'programming languages': ['js', 'java', 'c++']
+// }
+
+const obj1 = {
+  "my name": "John",
+  "i like my work": true,
+  "programming languages": ["js", "java", "c++"],
+};
+// У нас есть объект, в котором хранятся зарплаты нашей команды:
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130
+// }
+// Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
+
+// Если объект salaries пуст, то результат должен быть 0.
+
+
+Array.isArray(arr) - проверка на массив
