@@ -791,45 +791,45 @@
 // // atTheOldToad.updatePotionName("Stone skin", "Invisibility");   как отобразить вот это в консоли???
 
 
-//  Задание 41. Задача. Расширяем инвентарь
-const atTheOldToad = {
-  potions: [
-    { name: 'Speed potion', price: 460 },
-    { name: 'Dragon breath', price: 780 },
-    { name: 'Stone skin', price: 520 },
-  ],
-  // Change code below this line
-  getPotions() {
-    return this.potions;
-  },
-  addPotion(potionName) {
-for (let i = 0; i < this.potions.length; i += 1)
-    if (this.potions[i] === potionName) {
-      return `Potion ${potionName} is already equipped!`;
-    }
+// //  Задание 41. Задача. Расширяем инвентарь
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Speed potion', price: 460 },
+//     { name: 'Dragon breath', price: 780 },
+//     { name: 'Stone skin', price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+// for (let i = 0; i < this.potions.length; i += 1)
+//     if (this.potions[i] === potionName) {
+//       return `Potion ${potionName} is already equipped!`;
+//     }
 
-    this.potions.push(potionName);
-  },
-  removePotion(potionName) {
-  const { potions } = this;
-  for (let i = 0; i < potions.length; i += 1) {
-      if (potions[i].name === potionName) {
-        potions.splice(i, 1);
-        return potions;
-      }
-  } return `Potion ${potionName} is not in inventory!`;
-  },
+//     this.potions.push(potionName);
+//   },
+//   removePotion(potionName) {
+//   const { potions } = this;
+//   for (let i = 0; i < potions.length; i += 1) {
+//       if (potions[i].name === potionName) {
+//         potions.splice(i, 1);
+//         return potions;
+//       }
+//   } return `Potion ${potionName} is not in inventory!`;
+//   },
 
 
-  updatePotionName(oldName, newName) {
-       const { potions } = this;
-    for (let i = 0; i < potions.length; i += 1) {
-      if (potions[i].name === oldName) {
-        potions[i].name = newName;
-        return potions;
-      }
-    }
-    return `Potion ${oldName} is not in inventory!`;
-  },
-  // Change code above this line
-};
+//   updatePotionName(oldName, newName) {
+//        const { potions } = this;
+//     for (let i = 0; i < potions.length; i += 1) {
+//       if (potions[i].name === oldName) {
+//         potions[i].name = newName;
+//         return potions;
+//       }
+//     }
+//     return `Potion ${oldName} is not in inventory!`;
+//   },
+//   // Change code above this line
+// };

@@ -558,3 +558,25 @@
 // console.log(mango.blacklistedEmails); // 'poly@mail.com'
 // console.log(mango.isBlacklisted('mango@mail.com')); //  false
 // console.log(mango.isBlacklisted('poly@mail.com')); // true 
+
+
+// ДОПОЛНИТЕЛЬНО:
+
+
+// const numbers = [1, 2, 3, 4, 5];
+// const filteredNumbers = numbers.filter(value => {
+//   return value > 3;
+// });
+
+// console.log(filteredNumbers); // [4, 5]
+
+const users = [
+  { name: 'Mango', daysActive: 15 },
+  { name: 'Poly', daysActive: 4 },
+  { name: 'Ajax', daysActive: 27 },
+  { name: 'Chelsey', daysActive: 2 },
+];
+
+const sortByActiveDays = (a, b) => a.daysActive - b.daysActive;
+
+console.log(users.sort(sortByActiveDays));
